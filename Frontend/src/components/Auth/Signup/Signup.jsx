@@ -38,7 +38,7 @@ const Signup = ({ setIsLoggedIn }) => {
 
   const handleSignup = async (values) => {
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/user/signup', values);
+      const res = await axios.post('https://sih-pmsss.onrender.com/api/auth/user/signup', values);
 
       if (res.data && res.data.token) {
         localStorage.setItem('authToken', res.data.token);
