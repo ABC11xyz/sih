@@ -5,6 +5,8 @@ import userRoutes from './routes/userRoutes.js';
 import cookieParser from 'cookie-parser';
 import cors from 'cors';
 
+PORT = process.env.PORT || 5000;
+
 dotenv.config();
 
 const app = express();
@@ -16,7 +18,7 @@ app.use(cors());
 
 app.use("/api/auth/user", userRoutes);
 
-app.listen(5000, () => {
+app.listen(PORT, () => {
     console.log(`Server is running at - http://localhost:5000`);
     connectDB();
 });

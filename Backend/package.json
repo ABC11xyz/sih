@@ -5,8 +5,13 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
+<<<<<<< HEAD
     "start": "node server.js",
     "dev": "nodemon server.js"
+=======
+      "start" : "node server.js",
+    "dev" : "nodemon server.js"
+>>>>>>> cfb7f82c89f3eecf8f2929d937eef766038ad736
   },
   "author": "Vishnu Pad Shukla",
   "license": "ISC",
